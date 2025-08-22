@@ -1,0 +1,103 @@
+/* src/components/Community.css */
+@keyframes spin-slow {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin-slow-reverse {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .animate-spin-slow {
+    animation: spin-slow 30s linear infinite;
+  }
+  
+  .animate-spin-slow-reverse {
+    animation: spin-slow-reverse 30s linear infinite;
+  }
+  
+  .circle-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: visible;
+  }
+  
+  .circle-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(108.83deg, #5543D1 11.74%, #F8672C 71.91%);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(32.35% 32.35% at 34.12% 38.38%, #222222 0%, #151316 100%);
+    border-radius: 50%;
+    overflow: visible;
+  }
+  
+  .outer-join-container {
+    border-radius: 50%;
+    padding: 2px;
+    background: linear-gradient(282.53deg, rgba(0, 0, 0, 0) 13.21%, #F8672C 57.95%, #5543D1 82.13%);
+  }
+  
+  .join-container {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(52.06% 52.06% at 34.12% 38.38%, #222222 0%, #151316 100%);
+  }
+  
+
+  
+  @media (max-width: 1024px) {
+    .join-container {
+      width: 240px;
+      height: 240px;
+    }
+    .outer-join-container {
+      width: 242px;
+      height: 242px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .join-container {
+      width: 150px;
+      height: 150px;
+    }
+    .outer-join-container {
+      width: 152px;
+      height: 152px;
+    }
+  }
+  

@@ -1,0 +1,32 @@
+{
+  "name": "gotchi-town",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.0.0",
+    "axios": "^1.4.0",
+    "execp": "^0.0.1",
+    "framer-motion": "^12.23.12",
+    "fs": "^0.0.1-security",
+    "next": "15.4.5",
+    "path": "^0.12.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hot-toast": "^2.5.2",
+    "react-intersection-observer": "^9.16.0",
+    "react-scroll": "^1.9.3",
+    "react-switch": "^7.1.0",
+    "request": "^2.88.2",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
+  }
+}

@@ -1,0 +1,18 @@
+.footer {
+    background-color: #1b1b1b; /* dark background color */
+    height: 300px; /* adjust height as needed */
+    position: relative;
+  }
+  
+  .footer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 300px; /* adjust height to create the arc */
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+  }
+  

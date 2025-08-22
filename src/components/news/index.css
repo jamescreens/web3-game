@@ -1,0 +1,118 @@
+.newsSlider {
+    width: 100%;
+    padding: 2rem;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .news-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 40px;
+    padding: 8px 8px;
+  }
+  
+  .news-image {
+    width: 456px !important;
+    height: 264px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 40px;
+  }
+  
+  .news-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .news-title {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 4px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  
+  .news-button {
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #F8672C;
+    font-size: 16px;
+    line-height: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .news-button:hover {
+    background-color: #F8672C;
+  }
+  
+  .news-nav-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Adjust as necessary */
+    margin-top: 30px;
+  
+  }
+  
+  .news-nav-button {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff6700;
+    color: white;
+    border-radius: 40px;
+    width: 102px;
+    height: 79px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  
+  .newsSlider .news-swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .newsSlider .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 3px solid #5b42f3;
+    /* Adjust color as necessary */
+    border-radius: 50%;
+    opacity: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .newsSlider .swiper-pagination-bullet-active {
+    background-color: #5b42f3;
+    /* Adjust color as necessary */
+    transform: scale(1.2);
+  }
+  @media (max-width: 639px) {
+    .hide-on-mobile {
+      display: none;
+    }
+  }

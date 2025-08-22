@@ -1,0 +1,98 @@
+.ecoSlider {
+    width: 100%;
+    padding: 2rem;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .eco-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  .eco-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 8px 0;
+    text-align: center;
+  }
+  
+  .eco-title {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 4px;
+    font-weight: bold;
+    line-height: 29px;
+  }
+  
+  .eco-button {
+    color: white;
+    padding: 4px 16px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 2px solid #F8672C;
+    font-size: 16px;
+    line-height: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .eco-button:hover {
+    background-color: #F8672C;
+  }
+  
+  .eco-nav-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .eco-nav-button {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #5543D1 0%, #553DFF 100%);
+    color: white;
+    border-radius: 40px;
+    width: 102px;
+    height: 79px;
+    transition: width 0.3s ease, height 0.3s ease;
+  }
+  
+  .ecoSlider .eco-swiper-pagination {
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ecoSlider .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 3px solid #F8672C;
+    border-radius: 50%;
+    opacity: 1;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .ecoSlider .swiper-pagination-bullet-active {
+    background-color: #F8672C;
+    transform: scale(1.2);
+  }
+
+  .eco-bg {
+    background-image: url('/images/ecosystem/BezogeNFT.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

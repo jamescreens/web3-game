@@ -1,0 +1,25 @@
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 224px; /* 184px + 4px * 2 for border */
+  height: 224px; /* 184px + 4px * 2 for border */
+  border-radius: 20px;
+  background: linear-gradient(282.53deg, rgba(0, 0, 0, 0) 13.21%, #F8672C 57.95%, #5543D1 82.13%);
+  padding: 4px; /* To avoid clipping of the inner div */
+}
+
+.logo-inner {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  background: radial-gradient(52.06% 52.06% at 34.12% 38.38%, #222222 0%, #151316 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+   
+}
